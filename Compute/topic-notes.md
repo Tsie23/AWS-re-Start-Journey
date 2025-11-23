@@ -15,8 +15,6 @@ Compute refers to cloud-based services that provide processing power, and infras
 - Load Balancers
 
 ## Reflection
-I now understand that AWS compute is the processing power, memory, and infrastructure needed to run applications in the cloud instead of on physical hardware. EC2 is when a user rents virtual computers (called instances) and configures them with specific amounts of CPU, memory, and storage, whilst taking pricing into consideration.
-
-Resources can be scaled up or down based on demand, pay only for what you use, and have the infrastructure managed by AWS. Compute is not just about "running code"—it's about choosing the right type of resource for performance, cost, and maintenance.
+I now understand that AWS compute is the processing power, memory, and infrastructure needed to run applications in the cloud instead of on physical hardware. EC2 is when a user rents virtual computers (called instances) and configures them with specific amounts of CPU, memory, and storage, whilst taking pricing into consideration. Resources can be scaled up or down based on demand, pay only for what you use, and have the infrastructure managed by AWS. Compute is not just about "running code"—it's about choosing the right type of resource for performance, cost, and maintenance.
 
  

@@ -1,6 +1,6 @@
 # Linux Notes
 
-## What is Compute?
+## What is Linux?
 
 Compute is the processing power that lets your application run. In the cloud, this usually refers to virtual machines, containers, or serverless functions.
 
