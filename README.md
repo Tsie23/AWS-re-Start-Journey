@@ -38,7 +38,7 @@ Security Services: Crucially, I learned about foundational security, navigating 
 
 The technical skills acquired are certainly the currency of this industry, but the lessons I found most valuable are centered around how we apply that knowledge in a professional environment.
 
-🛠️ Hard Skills & Technologies:
+- Hard Skills & Technologies:
 
 Cloud Fundamentals: AWS Core Services (EC2, VPC, S3, IAM, CloudFront, Route 53, CloudWatch).
 
@@ -50,7 +50,7 @@ Database Management: Introduction to Relational vs. NoSQL (DynamoDB).
 
 Web Services: Static website hosting and CDN implementation.
 
-👥 Soft Skills & Professional Insight:
+- Soft Skills & Professional Insight:
 
 Reputation Management (Critical Service Delivery): A fundamental shift in my thinking, similar to how I learned that branding isn’t about a company’s logo or colour scheme. It's more centred around the company’s reputation among its customer base. This highlighted the importance of rendering good and consistent service to stakeholders, taking criticism and feedback in a constructive manner, as well as resolving any issues or complaints quickly before they snowball into a social media trend or worse, a devastating public incident. This insight directly applies to my backend and security aspirations: ensuring the services I build are reliable, responsive, and trustworthy is the ultimate measure of success.
 
