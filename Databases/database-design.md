@@ -2,7 +2,7 @@
 
 ## What is a Database?
 
-A database is a cloud-based offering that helps you store, manage, and retrieve data efficiently without you having to manage any physical server.
+A database is a cloud-based offering that helps you store, manage, and retrieve data efficiently without you having to manage any physical server. 
 
 ## Concepts Covered
 - Tables, rows, and columns
