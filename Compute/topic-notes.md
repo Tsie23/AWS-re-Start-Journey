@@ -16,7 +16,9 @@ Amazon S3(Amazon Simple Storage Service) is an online storage service similar to
 
 ## Key Concepts
 - Scaling (vertical vs horizontal)
+Vertical scaling means making system handle more traffic or work. 
 
+Horizontal scaling is when you add more servers and share the workload between them. 
 
 - AMIs (Amazon Machine Images)
 An AMI is a type of a template for making new EC2 servers. It contains the operating system, pre-installed software, customized settings and security configurations.

@@ -12,3 +12,6 @@
 
 ## Reflection
 Understanding the difference between object and block storage helped me figure out when to use each service.
+
+
+ebs/ ef/ s3

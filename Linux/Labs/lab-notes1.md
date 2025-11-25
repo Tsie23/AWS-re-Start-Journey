@@ -16,7 +16,11 @@ Create a directory
 
 ## Screenshot
 ![Challenge Instructions](images/Linux%20Lab%20Challenge%20Instructions.png "Instructions")
+After launching the Linux terminal with SSH, you log into terminal as EC2-User, and proceed to running commands.
+
 ![Bash GNU Nano Window](images/GNU%20Nano%20Window.png "Touch Script")
+Run the command to open the GNU Nano window to add the touch script in Bash and save it, to automate the directory output when running the command in terminal.
+
 ![Terminal Output](images/Bash%20Script%20Output.png "Touch Script Output")
 
 ## Takeaways

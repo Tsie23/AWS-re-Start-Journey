@@ -1,4 +1,4 @@
-# Compute Lab: Launching an EC2 Instance
+# Compute Lab: Launching an EC2 Instance / Working with AWS Lambda / Monitoring your EC2 Instance
 
 ## Objective
 Learn how to launch and SSH into an EC2 instance

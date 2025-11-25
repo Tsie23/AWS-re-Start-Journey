@@ -6,7 +6,11 @@ Networking is a way that computing devices like computers, servers, phones and d
 
 ### Examples
 - VPC (Virtual Private Cloud)
+A VPC is your private network inside AWS. You control who enters/has access, which systems can talk to each other, and what stays public or private. 
+
 - Internet Gateway
+
+
 - Route Tables
 
 ## Key Concepts
