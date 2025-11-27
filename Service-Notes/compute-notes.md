@@ -16,9 +16,9 @@ Amazon S3(Amazon Simple Storage Service) is an online storage service similar to
 
 ## Key Concepts
 - Scaling (vertical vs horizontal)
-Vertical scaling means making system handle more traffic or work. 
+* Vertical scaling means making system handle more traffic or work. 
 
-Horizontal scaling is when you add more servers and share the workload between them. 
+* Horizontal scaling is when you add more servers and share the workload between them. 
 
 - AMIs (Amazon Machine Images)
 An AMI is a type of a template for making new EC2 servers. It contains the operating system, pre-installed software, customized settings and security configurations.
@@ -27,6 +27,6 @@ An AMI is a type of a template for making new EC2 servers. It contains the opera
 Acts like a traffic controller, it receives all incoming requests and spreads them across multiple servers so none of them gets overloaded. It improves speed, prevents crashes, and keeps the system stable. It is similar to a traffic officer directing traffic during loadshedding. 
 
 ## Reflection
-I now understand that AWS compute is the processing power, memory, and infrastructure needed to run applications in the cloud instead of on physical hardware. EC2 is when a user rents virtual computers (called instances) and configures them with specific amounts of CPU, memory, and storage, whilst taking pricing into consideration. Resources can be scaled up or down based on demand, pay only for what you use, and have the infrastructure managed by AWS. Compute is not just about "running code"—it's about choosing the right type of resource for performance, cost, and maintenance.
+I now understand that AWS compute is the processing power, memory, and infrastructure needed to run applications in the cloud instead of on physical hardware. EC2 is when a user rents virtual computers (called instances) and configures them with specific amounts of CPU, memory, and storage, whilst taking pricing into consideration. Resources can be scaled up or down based on demand, pay only for what you use, and have the infrastructure managed by AWS. Compute is not just about "running code"; it's about choosing the right type of resource for performance, cost, and maintenance.
 
  
