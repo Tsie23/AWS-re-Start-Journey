@@ -1,4 +1,4 @@
-# Networking Lab: VPC Labs (Network Hardening)
+# Networking Lab: VPC Labs 
 
 ## Objective
 - Activate Amazon Inspector.

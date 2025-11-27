@@ -42,3 +42,10 @@ Creating the presentation taught the importance of translating technical knowled
 The emphasis on a clean, user-friendly design with features like booking and order forms highlighted that even technical projects must prioritize the end-user experience to achieve true business value.
  
 _Images to be incorporated_
+
+## Production Team(_Group7_)
+Leroy - website
+Kutloano - presentation + slides
+Brite - AWS Architecture Diagram & Benefits of Migraing to AWS
+Kebaabetswe Sennelo- S3, Cloudfront, Lambda, API Gateway, DynamoDB
+Lufuno – Business Analyst / Cost & Benefits
