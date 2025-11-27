@@ -1,7 +1,6 @@
 # Security Lab: Data Protection
 
 ## Objective
-Learn how to:
 Create an AWS KMS encryption key
 Install the AWS Encryption CLI
 Encrypt plaintext
@@ -9,7 +8,7 @@ Decrypt ciphertext
 
 ## Steps Taken
 
-## 🔑 Part 1: Make Your Encryption Key
+## Part 1: Make Your Encryption Key
 
 This first part shows you how to create a special encryption key, which we call a **KMS key**, that you'll use to protect your secret files.
 

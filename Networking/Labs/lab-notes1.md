@@ -1,7 +1,9 @@
-# Networking Lab: Launching an EC2 Instance
+# Networking Lab: VPC Labs (Network Hardening)
 
 ## Objective
-Learn how to launch and SSH into an EC2 instance
+- Activate Amazon Inspector.
+- Analyze and interpret vulnerability findings.
+- Remediate the vulnerabilities found by Amazon Inspector.
 
 ## Steps Taken
 1. Logged into AWS Console
