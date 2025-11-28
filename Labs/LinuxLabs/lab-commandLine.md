@@ -28,17 +28,10 @@ In this task, you attempt to ease your overall workload by reusing commands thro
 Lab Complete
 
 ## Challenges
-- Struggled with the touch command, getting the right code to get the desired script output
-- Solved by consulting AI for assistance with the touch command and automation
+- 
 
 ## Screenshot
-![Challenge Instructions](images/Inst.png "Ictions")
-After launching the Linux terminal with SSH, you log into terminal as EC2-User, and proceed to running commands.
-
-![Bash GNU Nano Window](images/dow.png "TScript")
-Run the command to open the GNU Nano window to add the touch script in Bash and save it, to automate the directory output when running the command in terminal.
-
-![Terminal Output](images/put.png "TScript Output")
+_Images to follow_
 
 ## Takeaways
 Linux is
