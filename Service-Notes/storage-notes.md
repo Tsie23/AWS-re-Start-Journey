@@ -1,4 +1,5 @@
 # Storage Notes
+
 ## What is Storage
 Storage is where you keep your digital stuff, like putting files on your laptop or phone. When talking about the cloud, storage refers to the way we securely keep our data accessible and safe. The most popular way data is stored on AWS is through an object storage service, which is different from the file system used on phones and laptops.
 
