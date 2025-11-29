@@ -17,6 +17,3 @@ Storage is where you keep your digital stuff, like putting files on your laptop 
 
 ## Reflection
 My biggest takeaway from this is how flexible and powerful AWS storage is. It is not just about one simple hard drive in the cloud;they designed a whole system to cater for different needs. Understanding the difference between object and block storage helped me figure out when best to utilise each service.
-
-
-ebs/ ef/ s3
