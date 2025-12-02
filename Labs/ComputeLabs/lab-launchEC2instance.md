@@ -4,24 +4,45 @@
 Create a directory
 
 ## Steps Taken
-1. Launched Linux terminal using SSH
-2. Logged into the terminal 
-3. Opened the GNU Nano window
-4. Created/wrote the touch script and saved
-5. Ran the test script, got the directory output
+1. Launched EC2 Instance
+2. Choose an AMI(Amazon Machine Image) 
+3. Choose Instance type
+4. Configure a Key Pair
+5. Configure Network Settings
+6. 
+7. 
 
 ## Challenges
 - Struggled with the touch command, getting the right code to get the desired script output
 - Solved by consulting AI for assistance with the touch command and automation
 
 ## Screenshot
-![Challenge Instructions](images/Lictions.png "Instructions")
-After launching the Linux terminal with SSH, you log into terminal as EC2-User, and proceed to running commands.
+* Step 1
+![Open EC2 Instance](images/Launch%20EC2%20Instance/1.%20Open%20EC2%20instance%20in%20management%20console.png "Open EC2 Instance in Management Console")
+Search for EC2 in the search bar on the Management console, and then select to open.
 
-![Bash GNU Nano Window](images/Gindow.png "Touch Script")
-Run the command to open the GNU Nano window to add the touch script in Bash and save it, to automate the directory output when running the command in terminal.
+![Launch Instance Window](images/Launch%20EC2%20Instance/2.%20Open%20launch%20instance%20menu.png "Open Launch instance window")
+Click on launch instance button, and open the launch instance window.
 
-![Terminal Output](images/Bashput.png "Touch Script Output")
+![Populate Names and Tags](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field")
+
+* Step 2
+![Choose AMI](images/Launch%20EC2%20Instance/4.%20Choose%20AMI.png "Confirm 'Amazon Linux' is selected in Quick Start") In the Quick Start section, select "Amazon Linux".
+
+* Step 3
+![Choose Instance Type](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Select Instance type") In the Instance type Section, click on the drop down menu and select t3.micro
+
+* Step 4
+![Configure Key Pair Login](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field")
+
+* Step 5 - in the Network Settings section choose "Edit"
+![Configure Network Settings](images/Launch%20EC2%20Instance/7.%20VPC%20required%20'LabVPC.png "Set up network settings")
+
+* Step 6
+![Configure Key Pair Login](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field")
+
+* Step 7
+![Configure Key Pair Login](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field")
 
 ## Takeaways
 Automation is the most effective way to run a directory, as opposed to hardcoding. A misplaced parenthesis can drastically change the script output.

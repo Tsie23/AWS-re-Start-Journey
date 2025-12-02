@@ -25,13 +25,11 @@ In this task, you attempt to ease your overall workload by reusing commands thro
 11. Press CTRL+R to bring up a reverse history search. In the reverse history search feature of the terminal, enter *TZ* and press TAB. This command will bring up an old use of the date command that you can edit, using the arrow buttons to edit the command inline.
 12. Enter *date* into the terminal and press ENTER, then enter !! and press ENTER. This step gives you the ability to rerun the most recent command.
 
-Lab Complete
-
 ## Challenges
-- 
+This lab did not present a lot of challenges, the only thing that gave me some trouble was getting the putty to connect and responsive during the lab. This was due to unstable internet connetion on my end. I remedied this by switching to mobile-hotspot.
 
 ## Screenshot
-_Images to follow_
+_Images in the folder_
 
 ## Takeaways
 Linux is
