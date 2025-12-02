@@ -40,7 +40,7 @@ The lab was broken down into four phases using a preconfigured environment with 
 - 
 
 ## Screenshot
-_Images to be loaded_
+![Configure Key Pair Login](images/System-Hardening%20Lab/Screenshot%202025-11-26%20125937.png "Fill in Names and Tags field") In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" drop-down list.
 
 ## Takeaways
 

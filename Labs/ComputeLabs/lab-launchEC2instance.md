@@ -9,8 +9,9 @@ Create a directory
 3. Choose Instance type
 4. Configure a Key Pair
 5. Configure Network Settings
-6. 
-7. 
+6. Add Storage
+7. Configure Advanced details
+8. Launch Instance
 
 ## Challenges
 - Struggled with the touch command, getting the right code to get the desired script output
@@ -33,16 +34,19 @@ Click on launch instance button, and open the launch instance window.
 ![Choose Instance Type](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Select Instance type") In the Instance type Section, click on the drop down menu and select t3.micro
 
 * Step 4
-![Configure Key Pair Login](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field")
+![Configure Key Pair Login](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field") In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" drop-down list.
 
 * Step 5 - in the Network Settings section choose "Edit"
 ![Configure Network Settings](images/Launch%20EC2%20Instance/7.%20VPC%20required%20'LabVPC.png "Set up network settings")
 
 * Step 6
-![Configure Key Pair Login](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field")
+![Configure Key Pair Login](images/Launch%20EC2%20Instance/6.%20Key%20Pair%20login.png "Fill in Names and Tags field")
 
 * Step 7
-![Configure Key Pair Login](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field")
+![Configure Advanced Details](images/Launch%20EC2%20Instance/10.%20Advanced%20details.png "Fill in Names and Tags field")
+
+* Step 8
+![Launch Instance](images/Launch%20EC2%20Instance/11.%20Launch%20instance.png "A Launch Instance  success message")
 
 ## Takeaways
 Automation is the most effective way to run a directory, as opposed to hardcoding. A misplaced parenthesis can drastically change the script output.

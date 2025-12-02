@@ -125,7 +125,7 @@ This command uses the same key (`$keyArn`) to take the ciphertext and turn it ba
 - While encrypting the secret data, I ran the example command *keyArn=(KMS ARN)* without substituting the value in the parenthesis with the correct ARN(Amazon Resource Name) value I copied after creating the KMS(Key Management Service). Corrected that by making the substitution and running the command again.
 
 ## Screenshot
-_(To Be Added)_
+![Configure Key Pair Login](images/System-Hardening%20Lab/Screenshot%202025-11-26%20125937.png "Fill in Names and Tags field") In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" drop-down list.
 
 ## Takeaways
 Encryption is very important in securing sensitive data. I scrambles the original data, making it illegible gibberish and thus useless in the hands of hackers who do not possess the encryption/decryption key. The only way to restore the encrypted data to it's original form is by making use of the decryption key.
