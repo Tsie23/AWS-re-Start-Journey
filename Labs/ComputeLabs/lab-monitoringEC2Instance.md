@@ -40,8 +40,25 @@ The lab was completed in three main parts with steps inside each part.
 - I quite enjoyed doing this lab, i did not encounter any notable challenges. The guide was clear and easy to follow along.
 
 ## Screenshot
-![Configure Key Pair Login](images/Monitor%20EC2%20Instance/Screenshot%202025-11-26%20081606.png "Fill in Names and Tags field") In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" drop-down list.
+![Search for SNS](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") 
+In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
 
+![Select Topic on left panel](images/Monitor%20EC2%20Instance/2.%20Select%20Topics%20on%20left%20panel.png "Select "Topics" on left pane") 
+On the SNS page, select *Topics* on the left panel.
+
+![Create Topic](images/Monitor%20EC2%20Instance/3.%20Create%20topic.png "Select ") 
+In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
+
+![Configure Key Pair Login](images/Monitor%20EC2%20Instance/5..png "Topic created successfully") 
+In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
+
+![Subscription Creation](images/Monitor%20EC2%20Instance/6.%20Create%20Subscription.png "Navigate to SNS on Management Console") 
+In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
+
+![Configure Key Pair Login](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
+![Configure Key Pair Login](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
+![Configure Key Pair Login](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
+![Configure Key Pair Login](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
 ## Takeaways
 This lab focused on the essential practices of logging and monitoring to ensure system performance and security. The core task was to establish an automated alert system using AWS services. This system needed to detect when the EC2 instance's central processing unit (CPU) usage spiked—simulating a critical event like a malware attack or unauthorized resource misuse. By setting up a CloudWatch alarm and integrating it with an SNS email notification, the goal was to instantly alert an administrator when the system was under stress. 
 
