@@ -8,3 +8,6 @@ This repository is a collection of modules and activities covered in the AWS re/
 - It's an exhibit of skills gained in the program
 - Serves as a personal knowledge base
 - A portfolio to be shared with recruiters
+
+## What I've learned
+- 
