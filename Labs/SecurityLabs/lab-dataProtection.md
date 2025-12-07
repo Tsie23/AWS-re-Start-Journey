@@ -10,19 +10,19 @@ Decrypt ciphertext
 
 ## Part 1: Make Your Encryption Key
 
-This first part shows you how to create a special encryption key, which we call a **KMS key**, that you'll use to protect your secret files.
+This first part shows you how to create a special encryption key, which we call a *KMS key*, that you'll use to protect your secret files.
 
 ### Step 1: Head Over to the Key Management Service
 
-Start in your management console. Look for the **KMS** tool in the search bar, then click the result that says **Key Management Service**. Once you're on the KMS page, click the button to **Create a key**.
+Start in your management console. Look for the *KMS* tool in the search bar, then click the result that says *Key Management Service*. Once you're on the KMS page, click the button to *Create a key*.
 
 ### Step 2: Choose the Key Type
 
-For the **Key type**, select **Symmetric**. A symmetric key is fast and efficient because it uses the exact same key to both scramble (encrypt) and unscramble (decrypt) your data. After choosing Symmetric, hit **Next** to move on.
+For the *Key type*, select *Symmetric*. A symmetric key is fast and efficient because it uses the exact same key to both scramble (encrypt) and unscramble (decrypt) your data. After choosing Symmetric, hit *Next* to move on.
 
 ### Step 3: Name and Describe Your Key
 
-Now you'll give your key a name and a description so you can easily find it later. For the **Alias**, type in **MyKMSKey**. For the **Description**, enter: **Key used to encrypt and decrypt data files.** Double-check that both look right, and then click **Next**.
+Now you'll give your key a name and a description so you can easily find it later. For the *Alias*, type in *MyKMSKey*. For the *Description*, enter: *Key used to encrypt and decrypt data files.* Double-check that both look right, and then click *Next*.
 
 ### Step 4: Grant Key Administrative Rights
 
@@ -126,6 +126,16 @@ This command uses the same key (`$keyArn`) to take the ciphertext and turn it ba
 
 ## Screenshot
 ![Configure Key Pair Login](images/System-Hardening%20Lab/Screenshot%202025-11-26%20125937.png "Fill in Names and Tags field") In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" drop-down list.
+
+* Confirms the creation of the symmetric key and displays its ARN.
+
+* Demonstrates the successfully updated AWS credentials file on the File Server instance.
+
+* Confirms the command structure used to encrypt the plaintext file using the KMS ARN.
+
+* Illustrates that the data has been successfully transformed into unreadable ciphertext.
+
+* Proves that the decryption process successfully recovered the original, readable data.
 
 ## Takeaways
 Encryption is very important in securing sensitive data. I scrambles the original data, making it illegible gibberish and thus useless in the hands of hackers who do not possess the encryption/decryption key. The only way to restore the encrypted data to it's original form is by making use of the decryption key.

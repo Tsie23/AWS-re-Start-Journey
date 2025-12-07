@@ -59,6 +59,7 @@ In the Amazon Management Console, enter *Simple Notification Service(SNS)* in th
 ![Configure Key Pair Login](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
 ![Configure Key Pair Login](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
 ![Configure Key Pair Login](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
+
 ## Takeaways
 This lab focused on the essential practices of logging and monitoring to ensure system performance and security. The core task was to establish an automated alert system using AWS services. This system needed to detect when the EC2 instance's central processing unit (CPU) usage spiked—simulating a critical event like a malware attack or unauthorized resource misuse. By setting up a CloudWatch alarm and integrating it with an SNS email notification, the goal was to instantly alert an administrator when the system was under stress. 
 

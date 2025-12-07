@@ -1,8 +1,8 @@
 # Linux Lab: Command Line
 
 ## Objective
-Run commands to gain knowledge of current system and current session
-Search and run previous bash commands
+- Run commands to gain knowledge of current system and current session
+- Search and run previous bash commands
 
 ## Steps Taken
 **Task 1**
@@ -29,7 +29,15 @@ In this task, you attempt to ease your overall workload by reusing commands thro
 This lab did not present a lot of challenges, the only thing that gave me some trouble was getting the putty to connect and responsive during the lab. This was due to unstable internet connetion on my end. I remedied this by switching to mobile-hotspot.
 
 ## Screenshot
-_Images in the folder_
+* Confirms the user has logged in to the EC2 instance as ec2-user.
+
+* Displays the basic system information gathered from the first set of commands.
+
+* Illustrates how to display the current date and time in an alternate time zone using the TZ environment variable.
+
+* Displays the numbered list of all commands previously executed in the current session.
+
+* Demonstrates the reverse history search feature recalling a previous command.
 
 ## Takeaways
-Linux is
+The Linux Bash terminal is an incredible and powerful environment for efficient workflow. Mastering core Linux commands and terminal shortcuts is an excellent way to being effective in cloud and systems administration.

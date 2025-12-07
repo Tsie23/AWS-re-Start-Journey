@@ -17,13 +17,31 @@
 - I kept getting the Syntax error because I had the aurora endpoint name in brackets<> when typing the query command in the terminal, remedied that by removing the brackets and running the SQL query again.
 
 ## Screenshot
-![Challenge Instructions](images/ructions.png "Instructions")
-After launching the Linux terminal with SSH, you log into terminal as EC2-User, and proceed to running commands.
 
-![Bash GNU Nano Window](images/indow.png "Touch Script")
-Run the command to open the GNU Nano window to add the touch script in Bash and save it, to automate the directory output when running the command in terminal.
+![alt text](<images/Aurora RDS/CreateDatabase.png>)
+![alt text](<images/Aurora RDS/CreateDatabase2.png>)
+![alt text](<images/Aurora RDS/CreateDatabase3.png>)
+![alt text](<images/Aurora RDS/CreateDatabase4.png>)
+![alt text](<images/Aurora RDS/CreateDatabase5.png>)
+![alt text](<images/Aurora RDS/CreateDatabase6.png>)
+![alt text](<images/Aurora RDS/CreateDatabase7.png>)
+![alt text](<images/Aurora RDS/CreateDatabase8.png>)
+![alt text](<images/Aurora RDS/CreateDatabase9.png>)
+![alt text](<images/Aurora RDS/CreateDatabase10.png>)
 
-![Terminal Output](images/BaOutput.png "Touch Script Output")
+* Confirms the primary configuration settings used for launching the Aurora cluster.
+
+![alt text](<images/Aurora RDS/DatabaseCreated.png>)
+* Indicates the successful deployment and readiness of the database cluster.
+
+![alt text](<images/Aurora RDS/PublicIP.png>)
+* Highlights the specific URL used to establish a connection to the primary database instance.
+
+![alt text](<images/Aurora RDS/MariaDBConnected.png>)
+* Displays the connection to MariaDB message, confirming the EC2 instance can reach and log in to Aurora.
+
+![alt text](<images/Aurora RDS/ComplexQueryOutput.png>)
+* Illustrates the results of the complex query, returning only the two rows (Australia and Thailand) that met both criteria.
 
 ## Takeaways
 When running query or commands syntax is very important, because simple things such as an extra space, missing parenthesis and even a semicolon when none is required could result in an error. 
