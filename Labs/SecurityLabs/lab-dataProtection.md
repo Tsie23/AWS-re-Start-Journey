@@ -125,9 +125,15 @@ This command uses the same key (`$keyArn`) to take the ciphertext and turn it ba
 - While encrypting the secret data, I ran the example command *keyArn=(KMS ARN)* without substituting the value in the parenthesis with the correct ARN(Amazon Resource Name) value I copied after creating the KMS(Key Management Service). Corrected that by making the substitution and running the command again.
 
 ## Screenshot
-![Configure Key Pair Login](images/System-Hardening%20Lab/Screenshot%202025-11-26%20125937.png "Fill in Names and Tags field") In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" drop-down list.
 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 125855.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 125937.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130203.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130219.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130357.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130533.png>)
 * Confirms the creation of the symmetric key and displays its ARN.
+
 
 * Demonstrates the successfully updated AWS credentials file on the File Server instance.
 

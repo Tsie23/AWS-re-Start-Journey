@@ -29,14 +29,20 @@ In this task, you attempt to ease your overall workload by reusing commands thro
 This lab did not present a lot of challenges, the only thing that gave me some trouble was getting the putty to connect and responsive during the lab. This was due to unstable internet connetion on my end. I remedied this by switching to mobile-hotspot.
 
 ## Screenshot
+![alt text](<images/linuxCLI/Screenshot 2025-12-08 075716.png>)
 * Confirms the user has logged in to the EC2 instance as ec2-user.
 
+![alt text](<images/linuxCLI/Screenshot 2025-12-08 075950.png>)
+![alt text](<images/linuxCLI/Screenshot 2025-12-08 080015.png>)
 * Displays the basic system information gathered from the first set of commands.
 
-* Illustrates how to display the current date and time in an alternate time zone using the TZ environment variable.
+![alt text](<images/linuxCLI/Screenshot 2025-12-08 080134.png>)
+* How to display the current date and time in an alternate time zone using the TZ environment variable.
 
+![alt text](<images/linuxCLI/Screenshot 2025-12-08 080533.png>)
 * Displays the numbered list of all commands previously executed in the current session.
 
+![alt text](<images/linuxCLI/Screenshot 2025-12-08 080748.png>)
 * Demonstrates the reverse history search feature recalling a previous command.
 
 ## Takeaways
