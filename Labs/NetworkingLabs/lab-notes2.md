@@ -1,4 +1,4 @@
-# Networking Lab: VPC Lab Creating Networkiing Resources in Amazon VPC
+# Networking Lab: VPC Lab Creating Networking Resources in Amazon VPC
 
 ## Objective
 - Summarize the customer scenario
