@@ -26,42 +26,44 @@ Now you'll give your key a name and a description so you can easily find it late
 
 ### Step 4: Grant Key Administrative Rights
 
-On the next screen, you need to decide who can manage or administrate this key. In the **Key administrators** section, find and select the checkbox for **voclabs**. This grants the necessary administrative control. When that's done, select **Next**.
+On the next screen, you need to decide who can manage or administrate this key. In the **Key administrators** section, find and select the checkbox for **voclabs**. This grants the necessary administrative control. When that's done, select *Next*.
 
 ### Step 5: Grant Key Usage Permissions
 
-Next, you'll specify who can *use* the key to actually encrypt and decrypt files. In the **This account** section, make sure you find and select the checkbox for **voclabs** again. This gives the necessary usage permissions. Once selected, choose **Next**.
+Next, you'll specify who can *use* the key to actually encrypt and decrypt files. In the *This account* section, make sure you find and select the checkbox for **voclabs** again. This gives the necessary usage permissions. Once selected, choose *Next*.
 
 ### Step 6: Finish the Key Creation and Copy the Key ARN
 
-Take a moment to look over the settings on the final review page. If everything looks correct, click **Finish**. Immediately after the key is created, click the link for **MyKMSKey**. You will see a long, unique code for your key called the **ARN (Amazon Resource Name)**. **Copy this entire ARN value and paste it into a simple text editor.** You'll need this specific code later on.
+Take a moment to look over the settings on the final review page. If everything looks correct, click *Finish*. Immediately after the key is created, click the link for *MyKMSKey*. You will see a long, unique code for your key called the *ARN (Amazon Resource Name)*. **Copy this entire ARN value and paste it into a simple text editor.** You'll need this specific code later on.
 
 ## Task 2: Set Up the File Server
 
-Before you can use your new key to scramble and protect files, you need to prepare the computer that will be doing the work—the **File Server EC2 instance**.
+Before you can use your new key to scramble and protect files, you need to prepare the computer that will be doing the work, i.e.: *File Server EC2 instance*.
 
 ### Step 7: Connect to the File Server
 
-In your console's search bar, type **EC2** and select the EC2 service. Look for the list of running instances and click the checkbox next to the **File Server** instance. With the server selected, click the **Connect** button at the top. Choose the **Session Manager** tab on the connection screen, and then click **Connect** again to open a terminal window to the server.
+In your console's search bar, type *EC2* and select the EC2 service. Look for the list of running instances and click the checkbox next to the *File Server* instance. With the server selected, click the *Connect* button at the top. Choose the *Session Manager* tab on the connection screen, and then click *Connect* again to open a terminal window to the server.
 
 ### Step 8: Create a Temporary Credentials File
 
-Once you have the terminal open, you'll need to run two quick commands. First, run `cd ~` to make sure you are in the main (home) directory. Second, run `aws configure`. When prompted, temporarily enter **1** for both the **AWS Access Key ID** and **AWS Secret Access Key**, and then press Enter after each. For the **Default region name**, copy and paste the correct region from the Vocareum AWS Details page. Just press Enter for the **Default output format**. This creates a temporary configuration file that you'll update next.
+Once you have the terminal open, you'll need to run two quick commands. 
+- First, run `cd ~` to make sure you are in the main (home) directory. 
+- Second, run `aws configure`. When prompted, temporarily enter **1** for both the *AWS Access Key ID* and *AWS Secret Access Key*, and then press Enter after each. For the *Default region name*, copy and paste the correct region from the Vocareum AWS Details page. Just press Enter for the *Default output format*. This creates a temporary configuration file that you'll update next.
 
 ### Step 9: Get the Real AWS Credentials
 
-Now, switch back to the main Vocareum console page and click the **AWS Details** button. Next to the **AWS CLI** section, click **Show**. You will see a block of code starting with `[default]`. **Copy this entire code block and paste it into the text editor** where you saved your key's ARN.
+Now, switch back to the main Vocareum console page and click the *AWS Details* button. Next to the *AWS CLI* section, click *Show*. You will see a block of code starting with `[default]`. **Copy this entire code block and paste it into the text editor** where you saved your key's ARN.
 
 ### Step 10: Update the Server Credentials File
 
-Return to your File Server terminal. You need to open the temporary credentials file you just created by running the command: `vi ~/.aws/credentials`. Inside the file, type the characters **dd** repeatedly to delete all the temporary contents. Now, **paste the real code block** you copied from Vocareum into this file. When the new content is in, press the **Escape** key, type `:wq`, and then press **Enter**. This command saves the new file contents and closes the editor. You can confirm the update by running `cat ~/.aws/credentials`.
+Return to your File Server terminal. You need to open the temporary credentials file you just created by running the command: *vi ~/.aws/credentials*. Inside the file, type the characters *dd* repeatedly to delete all the temporary contents. Now, **paste the real code block** you copied from Vocareum into this file. When the new content is in, press the *Escape* key, type `:wq`, and then press *Enter*. This command saves the new file contents and closes the editor. You can confirm the update by running *cat ~/.aws/credentials*.
 
 ### Step 11: Install the Encryption Tool
 
 The last step to prepare the server is to install the special command-line tool that handles the encryption. Run the following two commands, one after the other, in the terminal:
 
-  * `pip3 install aws-encryption-sdk-cli`
-  * `export PATH=$PATH:/home/ssm-user/.local/bin`
+  * pip3 install aws-encryption-sdk-cli
+  * export PATH=$PATH:/home/ssm-user/.local/bin
 
 This installs the necessary tool and sets up your terminal so you can easily run the encryption and decryption commands.
 
@@ -71,16 +73,16 @@ With your key created and your server set up, you can now practice securing a fi
 
 ### Step 12: Create a Mock Sensitive File
 
-First, you need a file to protect. Run the following two commands to create a file named `secret1.txt` and put some test data in it:
+First, you need a file to protect. Run the following two commands to create a file named *secret1.txt* and put some test data in it:
 
-  * `touch secret1.txt secret2.txt secret3.txt`
-  * `echo 'TOP SECRET 1!!!' > secret1.txt`
+  * touch secret1.txt secret2.txt secret3.txt
+  * echo 'TOP SECRET 1!!!' > secret1.txt
 
-You can verify the contents by running the command `cat secret1.txt`. Next, create a directory where the encrypted file will be placed by running: `mkdir output`.
+You can verify the contents by running the command *cat secret1.txt*. Next, create a directory where the encrypted file will be placed by running: *mkdir output*.
 
 ### Step 13: Prepare the Encryption Command
 
-Go back to your text editor where you saved the key ARN. You are going to create a variable on the server that holds your key ARN. Copy this line: `keyArn=(KMS ARN)`. Now, **replace the text (KMS ARN) with the actual ARN code** you copied in Step 6. Once updated, run this command in your File Server terminal.
+Go back to your text editor where you saved the key ARN. You are going to create a variable on the server that holds your key ARN. Copy this line: `keyArn=(KMS ARN)`. Now, *replace the text (KMS ARN) with the actual ARN code* you copied in Step 6. Once updated, run this command in your File Server terminal.
 
 ### Step 14: Encrypt the File
 
