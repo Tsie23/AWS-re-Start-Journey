@@ -42,6 +42,14 @@ The lab was broken down into four phases using a preconfigured environment with 
 ## Screenshot
 ![Configure Key Pair Login](images/System-Hardening%20Lab/Screenshot%202025-11-26%20125937.png "Fill in Names and Tags field") In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" drop-down list.
 
+* Illustrates how the initial patching operation was targeted using tags.
+
+* Displays the custom rules specifying Critical and Important Security Updates with the 3-day auto-approval delay.
+
+* Confirms the tagging process used to associate the Windows instances with the custom baseline.
+
+* Verifies that the patching operations across all six instances were successful.
+
 ## Takeaways
 
 The single most important lesson is that trying to manually patch hundreds or thousands of servers is time consuming and impossible. Patch Manager provides the necessary automation to maintain security standards across the entire fleet from a single console.
