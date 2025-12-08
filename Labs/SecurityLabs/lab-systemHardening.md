@@ -40,15 +40,28 @@ The lab was broken down into four phases using a preconfigured environment with 
 - 
 
 ## Screenshot
-![Configure Key Pair Login](images/System-Hardening%20Lab/Screenshot%202025-11-26%20125937.png "Fill in Names and Tags field") In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" drop-down list.
 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 125855.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 125937.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130203.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130219.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130357.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130533.png>)
 * Illustrates how the initial patching operation was targeted using tags.
 
-* Displays the custom rules specifying Critical and Important Security Updates with the 3-day auto-approval delay.
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 134452.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 134420.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 134214.png>)
+* Display the custom rules specifying Critical and Important Security Updates with the 3-day auto-approval delay.
 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 135541.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 135749.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 135952.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 140013.png>)
 * Confirms the tagging process used to associate the Windows instances with the custom baseline.
 
-* Verifies that the patching operations across all six instances were successful.
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 142030.png>)
+* Verify that the patching operations across all six instances were successful.
 
 ## Takeaways
 
