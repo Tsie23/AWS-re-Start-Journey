@@ -9,5 +9,22 @@ This repository is a collection of modules and activities covered in the AWS re/
 - Serves as a personal knowledge base
 - A portfolio to be shared with recruiters
 
+## Modules Covered in Labs
+
+* Cloud Foundations
+* Linux
+* Networking
+* Security
+* Python Programming
+* Databases
+* Storage and Archiving
+* Servers
+
+## Projects
+
+- Static Website on S3
+- E-Commerce 3D Architecture
+- Chatbot using Amazon Lex
+
 ## What I've learned
 - 

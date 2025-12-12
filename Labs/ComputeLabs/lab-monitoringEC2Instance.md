@@ -13,8 +13,19 @@ The lab was completed in three main parts with steps inside each part.
 #### Part 1: Configure the Notification Channel (Amazon SNS)
 
 1. Created a *Standard* Amazon SNS topic named `MyCwAlarm`.
+
+![Search for SNS](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") 
+In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
+
+![Select Topic on left panel](images/Monitor%20EC2%20Instance/2.%20Select%20Topics%20on%20left%20panel.png "Select "Topics" on left pane") 
+On the SNS page, select *Topics* on the left panel.
+
 2. Created a subscription for the new topic using the **Email** protocol and a valid, accessible email address as the endpoint.
+
+
 3. Opened the AWS notification email and chose **Confirm subscription** to activate the email endpoint. 
+![alt text](<images/Monitor EC2 Instance/10. Subscription confirmed.png>)
+
 4. The subscription status was verified as *Confirmed* in the AWS console.
 ![Configure Key Pair Login](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field") In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" drop-down list.
 
@@ -40,12 +51,6 @@ The lab was completed in three main parts with steps inside each part.
 - I quite enjoyed doing this lab, i did not encounter any notable challenges. The guide was clear and easy to follow along.
 
 ## Screenshot
-![Search for SNS](images/Monitor%20EC2%20Instance/1.%20Navigate%20to%20Simple%20Notification%20Service%20on%20Amazon%20Console%20Manager.png "Navigate to SNS on Management Console") 
-In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
-
-![Select Topic on left panel](images/Monitor%20EC2%20Instance/2.%20Select%20Topics%20on%20left%20panel.png "Select "Topics" on left pane") 
-On the SNS page, select *Topics* on the left panel.
-
 ![Create Topic](images/Monitor%20EC2%20Instance/3.%20Create%20topic.png "Select ") 
 In the Amazon Management Console, enter *Simple Notification Service(SNS)* in the search bar.
 

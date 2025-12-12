@@ -5,20 +5,7 @@ Create a directory
 
 ## Steps Taken
 1. Launched EC2 Instance
-2. Choose an AMI(Amazon Machine Image) 
-3. Choose Instance type
-4. Configure a Key Pair
-5. Configure Network Settings
-6. Add Storage
-7. Configure Advanced details
-8. Launch Instance
 
-## Challenges
-- Struggled with the touch command, getting the right code to get the desired script output
-- Solved by consulting AI for assistance with the touch command and automation
-
-## Screenshot
-* Step 1
 ![Open EC2 Instance](images/Launch%20EC2%20Instance/1.%20Open%20EC2%20instance%20in%20management%20console.png "Open EC2 Instance in Management Console")
 Search for EC2 in the search bar on the Management console, and then select to open.
 
@@ -27,32 +14,42 @@ Click on launch instance button, and open the launch instance window.
 
 ![Populate Names and Tags](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field")
 
-* Step 2
+2. Choose an AMI(Amazon Machine Image) 
+
 ![Choose AMI](images/Launch%20EC2%20Instance/4.%20Choose%20AMI.png "Confirm 'Amazon Linux' is selected in Quick Start") In the Quick Start section, select "Amazon Linux".
 
-* Step 3
+3. Choose Instance type
+
 ![Choose Instance Type](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Select Instance type") In the Instance type Section, click on the drop down menu and select t3.micro
 
-* Step 4
+4. Configure a Key Pair
+
 ![Configure Key Pair Login](images/Launch%20EC2%20Instance/3.%20Enter%20'Bastion%20host'%20in%20Name&Tags%20section.png "Fill in Names and Tags field") 
 In the Key Pay Login section select "Proceed without Key Pair" from the *Key Pair Name - Required" dropdown list.
 
-* Step 5 - in the Network Settings section choose "Edit"
+5. Configure Network Settings
+
 ![Configure Network Settings](images/Launch%20EC2%20Instance/7.%20VPC%20required%20'LabVPC.png "Set up network settings")
 Scroll down to the Network Settings section and click on the edit button. Select the VPC-required dropdown list and select 'Lab VPC'. In the Subnet dropdown list "Public Subnet" is selected by default, keep this default selection. Notice the default 'Enable' selection on the "Auto-assign public IP", keep the selection. Int the "Firewall(security groups)" section, 'Create security group' is selected by default, keep this selection, and enter *Bastion security group* on the Security group name - required field, and *SSH connection* on the Description - required field.
 
 ![Configure Key Pair Login](images/Launch%20EC2%20Instance/7.1%20Firewall(Security%20Group).png "Fill in Names and Tags field")
 In the Key Pair(login) sections, select the dropdown list and choose *Proceed without a key pair(not recommended) on the 'Key pair name - required section.
 
-* Step 6
+6. Add Storage
+
 ![Configure Storage](images/Launch%20EC2%20Instance/8.%20Add%20Storage.png "Configure storage size")
 In the Configure Storage sections, confirm the default *1x 8Gib gp3 Root value* selection the dropdown list and scroll down.
 
-* Step 7
+7. Configure Advanced details
 ![Configure Advanced Details](images/Launch%20EC2%20Instance/9.%20Advanced%20details.png "Fill in Names and Tags field") 
 
-* Step 8
+8. Launch Instance
+
 ![Launch Instance](images/Launch%20EC2%20Instance/11.%20Launch%20instance.png "A Launch Instance  success message")
+
+## Challenges
+- Struggled with the touch command, getting the right code to get the desired script output
+- Solved by consulting AI for assistance with the touch command and automation
 
 ## Takeaways
 Automation is the most effective way to run a directory, as opposed to hardcoding. A misplaced parenthesis can drastically change the script output.

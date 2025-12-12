@@ -8,18 +8,39 @@
 
 ## Steps Taken
 1. Created a new EBS volume in the EC2 Management Console, setting the size to 1 GiB and ensuring it was placed in the same Availability Zone as the running Lab EC2 instance.
+
+
 2. Attached the newly created volume (named My Volume) to the Lab EC2 instance, designating its device name as */dev/sdb*.
+
+
 3. Connected to the Lab EC2 instance using the EC2 Instance Connect terminal in the browser.
+
+
 4. Created and configured the file system on the new volume within the Linux instance:
 -  Used `sudo mkfs -t ext3 /dev/sdb` to format the volume as an ext3 file system.
 - Created a mount point directory using `sudo mkdir /mnt/data-store`.
 - Mounted the volume with `sudo mount /dev/sdb /mnt/data-store`.
 - Ensured the volume persists across reboots by adding an entry to */etc/fstab*.
+
 5. Tested the mounted volume by writing a file *(file.txt)* to the */mnt/data-store* directory and verifying its content.
+
 6. Created an EBS Snapshot *(named My Snapshot)* of the active My Volume.
+
+![alt text](<images/Workin With AmazonEBS/Screenshot 2025-12-08 140127.png>)
 7. Simulated a data loss by running `sudo rm /mnt/data-store/file.txt` to delete the test file from the original volume.
+
+![alt text](<images/Workin With AmazonEBS/Screenshot 2025-12-08 135339.png>) 
+![alt text](<images/Workin With AmazonEBS/Screenshot 2025-12-08 135358.png>) 
+![alt text](<images/Workin With AmazonEBS/Screenshot 2025-12-08 135504.png>) 
+![alt text](<images/Workin With AmazonEBS/Screenshot 2025-12-08 135523.png>)
 8. Restored the snapshot by creating a new EBS volume *(Restored Volume)* directly from My Snapshot.
+
+![alt text](<images/Workin With AmazonEBS/Screenshot 2025-12-08 135903.png>) 
+![alt text](<images/Workin With AmazonEBS/Screenshot 2025-12-08 135942.png>) 
+![alt text](<images/Workin With AmazonEBS/Screenshot 2025-12-08 135955.png>)
 9. Attached the restored volume to the Lab EC2 instance using the device name */dev/sdc*.
+
+![alt text](<images/Workin With AmazonEBS/Screenshot 2025-12-08 140109.png>)
 10. Mounted the restored volume to a new directory */mnt/data-store2* and verified that the deleted file *(file.txt)* was present, confirming the snapshot was a successful point-in-time backup.
 
 ## Challenges
