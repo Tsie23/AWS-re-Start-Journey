@@ -12,10 +12,13 @@ Launched terminal using SSH to connect to an Amazon Linux EC2 instance
 **Task 2 - Run familiar commands**
 1. From termial, entered *whoa* and press Tab(the auto complete feature displays the full *whoami* command)
 ![alt text](<images/linuxCLI/Screenshot 2025-12-08 075950.png>)
+
 2. Press ENTER to display current user name
 ![alt text](<images/linuxCLI/Screenshot 2025-12-08 075950.png>)
+
 3. Enter *hostname -s* and press ENTER to display a shortend version of computer's host name
 ![alt text](<images/linuxCLI/Screenshot 2025-12-08 075950.png>)
+
 4. Enter *uptime -p* and press ENTER to display the uptime of the system in an easily readable format
 ![alt text](<images/linuxCLI/Screenshot 2025-12-08 075950.png>)
 

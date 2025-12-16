@@ -12,29 +12,73 @@ The lab was broken down into four phases using a preconfigured environment with 
 #### Part 1: Patching Linux Instances with Default Baseline
 
 1. Accessed the Patch Manager feature within AWS Systems Manager.
-2. Chose the *Patch now* option to apply the default baseline (`AWS-AmazonLinux2DefaultPatchBaseline`).
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 125855.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 125937.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130203.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130219.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130357.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130533.png>)
+
+2. Click the *Patch now* option in the Patch Manager window  
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130755.png>)
+
 3. Set the Patching operation to *Scan and install* and the Reboot option to *Reboot if needed*.
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 131056.png>)
+
 4. Selected *Specify instance tags* and used the tag `Patch Group` with the value `LinuxProd` to target the three Linux instances.
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 131205.png>)
+
+5. Scroll down and click the *Patch now* button to apply the default baseline (`AWS-AmazonLinux2DefaultPatchBaseline`).
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 131243.png>)
+
 5. Executed the patch command and monitored the status until the operation completed successfully on all three Linux instances.
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 132606.png>)
 
 #### Part 2: Creating a Custom Patch Baseline for Windows
 
 1. Created a new patch baseline named `WindowsServerSecurityUpdates` for the *Windows* Operating system.
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 132913.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 133319.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 133747.png>) 
+
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 134228.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 134420.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 134452.png>)
+
 2. Added an approval rule for **WindowsServer2019** that targeted patches with *Severity* *Critical* and *Classification* *SecurityUpdates*, setting "Auto-approval" to *3 days*.
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 134214.png>) 
+
 3. Added a second rule for **WindowsServer2019** that targeted patches with *Severity*, *Important*, and *Classification* *SecurityUpdates*, setting "Auto-approval" to *3 days*.
+
 4. Modified the new `WindowsServerSecurityUpdates` baseline to associate it with the patch group named `WindowsProd`.
+
 
 #### Part 3: Tagging and Patching Windows Instances
 
 1. Used the EC2 console to add a tag with *Key:* *Patch Group* and *Value:* *WindowsProd* to all three Windows instances (`Windows-1`, `Windows-2`, and `Windows-3`).
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 140612.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 140700.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 140744.png>) 
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 140827.png>) 
+  
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 141258.png>)
+
 2. Returned to Patch Manager and chose *Patch now*.
+
+
 3. Used the same configuration as Phase 1 (*Scan and install*, *Reboot if needed*) but targeted the tag *Key:* *Patch Group* with *Value:* *WindowsProd*.
+
+
 4. Executed the patch command, and monitored the output in the Run Command section, which showed Patch Manager using the Run Command to run the patching operations based on the defined `WindowsProd` patch group.
+
 
 #### Part 4: Verifying Compliance
 
 1. Navigated to the Patch Manager Dashboard tab and confirmed that the *Compliance summary* showed *Compliant*, verifying all three Linux and all three Windows instances were compliant.
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 141814.png>)
+
 2. Checked the *Compliance reporting* tab to verify the *Compliance status* was *Compliant* for all six instances and reviewed details like the baseline used and the specific patches applied to the Windows nodes.
+![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 142030.png>)
 
 ## Challenges
 - 

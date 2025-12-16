@@ -1,4 +1,4 @@
-# Compute Lab: Launching an EC2 Instance / Working with AWS Lambda
+# Compute Lab: Launching an EC2 Instance 
 
 ## Objective
 Create a directory

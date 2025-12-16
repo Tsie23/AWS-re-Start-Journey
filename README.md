@@ -18,13 +18,12 @@ This repository is a collection of modules and activities covered in the AWS re/
 * Python Programming
 * Databases
 * Storage and Archiving
-* Servers
 
 ## Projects
 
 - Static Website on S3
 - E-Commerce 3D Architecture
-- Chatbot using Amazon Lex
+- Chatbot quiz using Amazon Lex
 
 ## What I've learned
 - 
