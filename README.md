@@ -40,7 +40,7 @@ Projects/ – End-to-end architectural solutions and implementation details.
 Service-Notes/ – Reflections on growth and evolving cloud expertise.
 
 ## Connect with Me
-**LinkedIn**: 
+**LinkedIn**: www.linkedin.com/in/kebaabetswe-a-sennelo-28226130 
 **Career Aspiration**: I am actively seeking opportunities to contribute and further refine my skills as a Junior Cloud Practitioner or Junior Backend Developer.
 
 * What I Did: Architected production-ready environments.

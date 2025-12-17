@@ -126,24 +126,5 @@ This command uses the same key (`$keyArn`) to take the ciphertext and turn it ba
 - I incorrectly put the *Default Region* in place of the *AWS Secret Access Key* when creating the AWS Configuration file. I remedied this mistake by terminating the session manager and starting again.
 - While encrypting the secret data, I ran the example command *keyArn=(KMS ARN)* without substituting the value in the parenthesis with the correct ARN(Amazon Resource Name) value I copied after creating the KMS(Key Management Service). Corrected that by making the substitution and running the command again.
 
-## Screenshot
-
-![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 125855.png>) 
-![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 125937.png>) 
-![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130203.png>) 
-![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130219.png>) 
-![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130357.png>) 
-![alt text](<images/System-Hardening Lab/Screenshot 2025-11-26 130533.png>)
-* Confirms the creation of the symmetric key and displays its ARN.
-
-
-* Demonstrates the successfully updated AWS credentials file on the File Server instance.
-
-* Confirms the command structure used to encrypt the plaintext file using the KMS ARN.
-
-* Illustrates that the data has been successfully transformed into unreadable ciphertext.
-
-* Proves that the decryption process successfully recovered the original, readable data.
-
 ## Takeaways
 Encryption is very important in securing sensitive data. I scrambles the original data, making it illegible gibberish and thus useless in the hands of hackers who do not possess the encryption/decryption key. The only way to restore the encrypted data to it's original form is by making use of the decryption key.

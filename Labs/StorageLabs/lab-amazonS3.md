@@ -79,7 +79,7 @@
  * Choose Save changes (confirm on the prompt).
  ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 160745.png>) 
  ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 160831.png>)
-![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 160848.png>)
+ ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 160848.png>)
 
 19. While still on the Permissions tab, under Object Ownership, choose Edit.
 ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 160916.png>) 
@@ -109,9 +109,71 @@ The static website content is packaged up; let's get it ready for deployment.
 ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 161338.png>)
 
 ### Task 7: Upload Files to Amazon S3 and Enable Hosting
-22. Set the Index Document: This command tells S3 which file to load when someone visits the site's root URL. (Remember to replace <your-unique-bucket-name>.)aws s3 website s3://<your-unique-bucket-name>/ --index-document index.html
+22. Set the Index Document: This command tells S3 which file to load when someone visits the site's root URL. (Remember to replace <your-unique-bucket-name>.) Run the command:`aws s3 website s3://<your-unique-bucket-name>/ --index-document index.html`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 162340.png>)
 
-23. 
+23. Upload the Files: This command copies the directory contents to your bucket. The --recursive and --acl public-read flags are crucial for a fully functional public static website. Run the command: `aws s3 cp /home/ec2-user/sysops-activity-files/static-website/ s3://<your-unique-bucket-name>/ --recursive --acl public-read`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 162301.png>)
+
+24. Verify the Upload: Run the command `aws s3 ls <your-unique-bucket-name>`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 162512.png>)
+
+25. View Your Site!
+ * In the AWS console, select your bucket and go to the Properties tab.
+ * Scroll to the bottom and find Static website hosting—it should now be Enabled.
+ * Choose the Bucket website endpoint URL to open your new static website!
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 162734.png>)
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 162907.png>)
+
+## Task 8: Create a Repeatable Deployment Script
+To make updates super fast, let's create a simple batch file (a shell script) to run the upload command with a single line.
+26. Review your history to find the aws s3 cp line you just used:`history`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 163814.png>)
+
+27. Create and Open the Script File: Change back to your home directory, create an empty file, and open it in the VI editor.
+ * `cd ~`
+ ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164331.png>)
+
+ * `touch update-website.sh`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164311.png>)
+
+ * `vi update-website.sh`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 165104.png>)
+
+ 28. Edit the File in VI:
+ * Press i to enter edit (insert) mode.
+ ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164014.png>)
+
+ * Add the standard bash file header and then paste your aws s3 cp command:`#!/bin/bash aws s3 cp /home/ec2-user/sysops-activity-files/static-website/ s3://<your-unique-bucket-name>/ --recursive --acl public-read`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164118.png>)
+
+ * Press Esc, enter :wq, and press Enter to save and quit.
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164224.png>)
+
+29. Make the Script Executable:`chmod +x update-website.sh`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 165119.png>)
+
+30. Test the Update Process:
+ * Open the website's local index.html to make a change: `vi sysops-activity-files/static-website/index.html`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 165133.png>)
+
+ * Press i to edit and modify the HTML color codes to update the page's look:
+ ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164442.png>)
+
+   * Change bgcolor="aquamarine" to bgcolor="gainsboro" (2 instances).
+   ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164902.png>)
+   ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164714.png>)
+
+   * Change bgcolor="orange" to bgcolor="cornsilk" (1 instance).
+   ![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164804.png>)
+
+* Press Esc, enter :wq, and press Enter to save and quit.
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 164945.png>)
+
+31. Run Your Deployment Script: `./update-website.sh`
+![alt text](<images/Creating a Website with S3/Screenshot 2025-12-16 165324.png>)
+
+32. Verify: Return to your browser and refresh the website. You should see the new colors!
 
 ## Challenges
 - Logging into the Management Console as awsS3user, presented a bit of a challenge due to permission restrictions. These were overcome by adjusting permissions using the AWS CLI.
