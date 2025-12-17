@@ -50,20 +50,32 @@ Before you can use your new key to scramble and protect files, you need to prepa
 ### Step 7: Connect to the File Server
 
 In your console's search bar, type *EC2* and select the EC2 service. Look for the list of running instances and click the checkbox next to the *File Server* instance. With the server selected, click the *Connect* button at the top. Choose the *Session Manager* tab on the connection screen, and then click *Connect* again to open a terminal window to the server.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 133854.png>) 
+![alt text](<images/Data Protection/Screenshot 2025-12-17 133739.png>)
+![alt text](<images/Data Protection/Screenshot 2025-12-17 133920.png>)
 
 ### Step 8: Create a Temporary Credentials File
 
 Once you have the terminal open, you'll need to run two quick commands. 
 - First, run `cd ~` to make sure you are in the main (home) directory. 
 - Second, run `aws configure`. When prompted, temporarily enter **1** for both the *AWS Access Key ID* and *AWS Secret Access Key*, and then press Enter after each. For the *Default region name*, copy and paste the correct region from the Vocareum AWS Details page. Just press Enter for the *Default output format*. This creates a temporary configuration file that you'll update next.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134036.png>)
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134202.png>)
 
 ### Step 9: Get the Real AWS Credentials
 
 Now, switch back to the main Vocareum console page and click the *AWS Details* button. Next to the *AWS CLI* section, click *Show*. You will see a block of code starting with `[default]`. **Copy this entire code block and paste it into the text editor** where you saved your key's ARN.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134832.png>)
 
 ### Step 10: Update the Server Credentials File
 
 Return to your File Server terminal. You need to open the temporary credentials file you just created by running the command: *vi ~/.aws/credentials*. Inside the file, type the characters *dd* repeatedly to delete all the temporary contents. Now, **paste the real code block** you copied from Vocareum into this file. When the new content is in, press the *Escape* key, type `:wq`, and then press *Enter*. This command saves the new file contents and closes the editor. You can confirm the update by running *cat ~/.aws/credentials*.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134655.png>)
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134415.png>) 
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134437.png>) 
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134548.png>) 
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134636.png>)
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134740.png>)
 
 ### Step 11: Install the Encryption Tool
 
@@ -71,6 +83,8 @@ The last step to prepare the server is to install the special command-line tool 
 
   * pip3 install aws-encryption-sdk-cli
   * export PATH=$PATH:/home/ssm-user/.local/bin
+![alt text](<images/Data Protection/Screenshot 2025-12-17 134928.png>)
+![alt text](<images/Data Protection/Screenshot 2025-12-17 135041.png>)
 
 This installs the necessary tool and sets up your terminal so you can easily run the encryption and decryption commands.
 
@@ -84,12 +98,17 @@ First, you need a file to protect. Run the following two commands to create a fi
 
   * touch secret1.txt secret2.txt secret3.txt
   * echo 'TOP SECRET 1!!!' > secret1.txt
+![alt text](<images/Data Protection/Screenshot 2025-12-17 135110.png>)
+![alt text](<images/Data Protection/Screenshot 2025-12-17 135138.png>)
 
 You can verify the contents by running the command *cat secret1.txt*. Next, create a directory where the encrypted file will be placed by running: *mkdir output*.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 135222.png>)
+![alt text](<images/Data Protection/Screenshot 2025-12-17 135247.png>)
 
 ### Step 13: Prepare the Encryption Command
 
 Go back to your text editor where you saved the key ARN. You are going to create a variable on the server that holds your key ARN. Copy this line: `keyArn=(KMS ARN)`. Now, *replace the text (KMS ARN) with the actual ARN code* you copied in Step 6. Once updated, run this command in your File Server terminal.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 135426.png>)
 
 ### Step 14: Encrypt the File
 
