@@ -9,21 +9,41 @@ This repository is a collection of modules and activities covered in the AWS re/
 - Serves as a personal knowledge base
 - A portfolio to be shared with recruiters
 
-## Modules Covered in Labs
+## Covered Labs
 
-* Cloud Foundations
+* Compute 
 * Linux
 * Networking
 * Security
 * Python Programming
 * Databases
-* Storage and Archiving
+* Storage 
 
 ## Projects
 
-- Static Website on S3
-- E-Commerce 3D Architecture
-- Chatbot quiz using Amazon Lex
+### Static Website on S3
+On this group project we were tasked with migrating a website to host it using Amazon S3 and Cloudfront for a restaurant that was experiencing customer complaints and loss due to order errors and lost bookings. 
+
+### E-Commerce 3D Architecture
+This project required the group to create a 3D  architecture design for an e-commerce store, outlining the different Amazon services used to create their store and how they interact and work together to provide the most cost effective solution.
+
+### Chatbot quiz using Amazon Lex
+The project requires the team to create an interactive quiz chat-bot using Amazon Lex, that asks the user a series of questions and the user get to select the correct answer from the provided multiple-choice answer options.
 
 ## What I've learned
 - 
+
+## Repository Structure
+Certificates/ – Evidence of technical proficiency and curriculum completion.
+Labs/ – Detailed explanations of technical exercises completed accompanied by screenshot images, challenges faced and key takeaway insights.
+Projects/ – End-to-end architectural solutions and implementation details.
+Service-Notes/ – Reflections on growth and evolving cloud expertise.
+
+## Connect with Me
+**LinkedIn**: 
+**Career Aspiration**: I am actively seeking opportunities to contribute and further refine my skills as a Junior Cloud Practitioner or Junior Backend Developer.
+
+* What I Did: Architected production-ready environments.
+* Key Takeaways: Always designing with security in mind(Principle of Least Priviledge), and pick out the best combinations of services that are cost effective to solve a customer's problem.
+
+
