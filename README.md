@@ -11,8 +11,11 @@ This repository is a collection of modules and activities covered in the AWS re/
 
 ## Repository Structure
 Certificates/ – Evidence of technical aptitude, and successful completion.
+
 Labs/ – Detailed explanations of technical exercises completed accompanied by screenshot images, challenges faced and key takeaway insights.
+
 Projects/ – detailed outlines of solutions implemented in completing the project brief.
+
 Service-Notes/ – A brief description of the modules content, terms and concepts.
 
 ## Covered Labs
@@ -43,6 +46,7 @@ The project requires the team to create an interactive quiz chat-bot using Amazo
 
 ## Connect with Me
 **LinkedIn**: www.linkedin.com/in/kebaabetswe-a-sennelo-28226130 
+
 **Career Aspiration**: I am actively seeking opportunities to contribute and further refine my skills as a Junior Cloud Practitioner or Junior Backend Developer.
 
 * Skills Gained: Creating and migrating a website using Amazon S3,and Cloudfront. Chatbot creation using Amazon Lex, and running SQL queries.
