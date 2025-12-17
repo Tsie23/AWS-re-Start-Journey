@@ -15,26 +15,33 @@ This first part shows you how to create a special encryption key, which we call 
 ### Step 1: Head Over to the Key Management Service
 
 Start in your management console. Look for the *KMS* tool in the search bar, then click the result that says *Key Management Service*. Once you're on the KMS page, click the button to *Create a key*.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 132949.png>)
 
 ### Step 2: Choose the Key Type
 
 For the *Key type*, select *Symmetric*. A symmetric key is fast and efficient because it uses the exact same key to both scramble (encrypt) and unscramble (decrypt) your data. After choosing Symmetric, hit *Next* to move on.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 133022.png>)
 
 ### Step 3: Name and Describe Your Key
 
 Now you'll give your key a name and a description so you can easily find it later. For the *Alias*, type in *MyKMSKey*. For the *Description*, enter: *Key used to encrypt and decrypt data files.* Double-check that both look right, and then click *Next*.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 133217.png>)
 
 ### Step 4: Grant Key Administrative Rights
 
 On the next screen, you need to decide who can manage or administrate this key. In the **Key administrators** section, find and select the checkbox for **voclabs**. This grants the necessary administrative control. When that's done, select *Next*.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 133323.png>)
 
 ### Step 5: Grant Key Usage Permissions
 
 Next, you'll specify who can *use* the key to actually encrypt and decrypt files. In the *This account* section, make sure you find and select the checkbox for **voclabs** again. This gives the necessary usage permissions. Once selected, choose *Next*.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 133415.png>)
 
 ### Step 6: Finish the Key Creation and Copy the Key ARN
 
 Take a moment to look over the settings on the final review page. If everything looks correct, click *Finish*. Immediately after the key is created, click the link for *MyKMSKey*. You will see a long, unique code for your key called the *ARN (Amazon Resource Name)*. **Copy this entire ARN value and paste it into a simple text editor.** You'll need this specific code later on.
+![alt text](<images/Data Protection/Screenshot 2025-12-17 133519.png>) 
+![alt text](<images/Data Protection/Screenshot 2025-12-17 133549.png>)
 
 ## Task 2: Set Up the File Server
 
