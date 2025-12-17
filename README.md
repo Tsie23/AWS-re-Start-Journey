@@ -9,6 +9,12 @@ This repository is a collection of modules and activities covered in the AWS re/
 - Serves as a personal knowledge base
 - A portfolio to be shared with recruiters
 
+## Repository Structure
+Certificates/ – Evidence of technical aptitude, and successful completion.
+Labs/ – Detailed explanations of technical exercises completed accompanied by screenshot images, challenges faced and key takeaway insights.
+Projects/ – detailed outlines of solutions implemented in completing the project brief.
+Service-Notes/ – A brief description of the modules content, terms and concepts.
+
 ## Covered Labs
 
 * Compute 
@@ -31,19 +37,15 @@ This project required the group to create a 3D  architecture design for an e-com
 The project requires the team to create an interactive quiz chat-bot using Amazon Lex, that asks the user a series of questions and the user get to select the correct answer from the provided multiple-choice answer options.
 
 ## What I've learned
-- 
+- I learned about the various services availabe at AWS, and their use cases. I got introduced to concept am]nd principles that have shaped how I look at the role of Cloud Practitioner, working on/in the cloud, and designing cloud based solutions. One principle that has been etched on my brain is *The Principle of Least Priviledge* when designing and assigning access to services. This principle states that as a systems administrator or Senior DevOps Engineer, you should limited assign access to relevant people for a specific duration that they might need to have access granted, afterwhich you must revoke access as part of a security measure. 
 
-## Repository Structure
-Certificates/ – Evidence of technical proficiency and curriculum completion.
-Labs/ – Detailed explanations of technical exercises completed accompanied by screenshot images, challenges faced and key takeaway insights.
-Projects/ – End-to-end architectural solutions and implementation details.
-Service-Notes/ – Reflections on growth and evolving cloud expertise.
+- I have gained skills in Amazon S3, EC2, as well as working with Databases(SQL, DynamoDB), and I was introduced to the world of chatbot creation with the third project we were assigned, which thoroughly stretched my mind. This piqued my interest and I will be delving deeper into and gaining more hands-on experience with Generative AI, Deep Learning, ML, and AI concepts.
 
 ## Connect with Me
 **LinkedIn**: www.linkedin.com/in/kebaabetswe-a-sennelo-28226130 
 **Career Aspiration**: I am actively seeking opportunities to contribute and further refine my skills as a Junior Cloud Practitioner or Junior Backend Developer.
 
-* What I Did: Architected production-ready environments.
+* Skills Gained: Creating and migrating a website using Amazon S3,and Cloudfront. Chatbot creation using Amazon Lex, and running SQL queries.
 * Key Takeaways: Always designing with security in mind(Principle of Least Priviledge), and pick out the best combinations of services that are cost effective to solve a customer's problem.
 
 
