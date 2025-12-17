@@ -1,4 +1,4 @@
-# Networking Lab: VPC Labs 
+# Python Lab: Creating my first python file "Hello World" 
 
 ## Objective
 - Write and execute "Hello, World", using Python 3.
