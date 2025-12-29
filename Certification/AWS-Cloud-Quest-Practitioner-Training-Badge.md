@@ -61,3 +61,6 @@ This important course teaches you all about responsible AI, defining it and expl
 
 ![alt text](images/aws-cloud-quest-cloud-practitioner-training-badge.png)
 ### AWS Cloud Practitioner Training Badge
+
+![alt text](images/aws-re-start-graduate.png)
+### AWS re/Start Graduate Badge
