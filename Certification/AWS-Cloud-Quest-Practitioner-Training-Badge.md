@@ -2,6 +2,11 @@
 
 ## Certificates
 
+![alt text](<images/AWS Certified Cloud Practitioner.png)
+
+### AWS Certified Cloud Practitioner Certificate CLF-02 
+This is the official cloud practitioner certificate from AWS, where my understandin of the different AWS products and services and how to utilize them was tested.
+
 ![alt text](<images/AWS SimuLearn- Core Security Concepts.png>)
 
 ### AWS SimuLearn - Core Security Concepts
